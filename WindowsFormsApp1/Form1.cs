@@ -34,28 +34,37 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Rozr tabul = new Rozr();
-
-            double xn, xk, h, a;
-
-            xn = Convert.ToDouble(this.textBox1.Text);
-            xk = Convert.ToDouble(this.textBox2.Text);
-            h = Convert.ToDouble(this.textBox3.Text);
-            a = Convert.ToDouble(this.textBox4.Text);
-
-            dataGridView1.Rows.Clear();
-            chart1.Series[0].Points.Clear();
-
-            tabul.tab(xn, xk, h, a);
-
-            for(int i = 0; i < tabul.n; i++)
+            try
             {
-                dataGridView1.Rows.Add(Math.Round(tabul.xy[i, 0], 2).ToString(),
-                    Math.Round(tabul.xy[i, 1], 3).ToString());
 
-                chart1.Series[0].Points.AddXY(tabul.xy[i, 0], tabul.xy[i, 1]);
+                Rozr tabul = new Rozr();
 
+                double xn, xk, h, a;
+
+                xn = Convert.ToDouble(this.textBox1.Text);
+                xk = Convert.ToDouble(this.textBox2.Text);
+                h = Convert.ToDouble(this.textBox3.Text);
+                a = Convert.ToDouble(this.textBox4.Text);
+
+                dataGridView1.Rows.Clear();
+                chart1.Series[0].Points.Clear();
+
+                tabul.tab(xn, xk, h, a);
+
+                for (int i = 0; i < tabul.n; i++)
+                {
+                    dataGridView1.Rows.Add(Math.Round(tabul.xy[i, 0], 2).ToString(),
+                        Math.Round(tabul.xy[i, 1], 3).ToString());
+
+                    chart1.Series[0].Points.AddXY(tabul.xy[i, 0], tabul.xy[i, 1]);
+
+                }
             }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -66,6 +75,20 @@ namespace WindowsFormsApp1
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void одномірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OdnMas f = new OdnMas();
+            f.Show();
+            this.Hide();
+        }
+
+        private void двовимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DvovMas f = new DvovMas();
+            f.Show();
+            this.Hide();
         }
     }
 }

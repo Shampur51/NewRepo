@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                if(i <= 0 &&  i < l)
+                if(i >= 0 &&  i < l)
                     return a[i];
                 else
                 {

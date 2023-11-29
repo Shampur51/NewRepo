@@ -54,14 +54,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(366, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 16);
+            this.label1.Size = new System.Drawing.Size(195, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Вперше зафіксовано від\'ємну температуру:";
+            this.label1.Text = "О котрій зафіксовано мороз:";
             // 
             // TimeT
             // 
             this.TimeT.AutoSize = true;
-            this.TimeT.Location = new System.Drawing.Point(683, 138);
+            this.TimeT.Location = new System.Drawing.Point(593, 138);
             this.TimeT.Name = "TimeT";
             this.TimeT.Size = new System.Drawing.Size(0, 16);
             this.TimeT.TabIndex = 3;

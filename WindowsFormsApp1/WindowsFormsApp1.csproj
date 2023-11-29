@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays.cs" />
+    <Compile Include="Arrays2D.cs" />
     <Compile Include="DvovMas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -50,6 +50,7 @@
             this.масивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.одномірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.двовимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -181,14 +182,14 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(321, 142);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(323, 281);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
@@ -197,7 +198,8 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.масивиToolStripMenuItem});
+            this.масивиToolStripMenuItem,
+            this.unitTestToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -226,6 +228,13 @@
             this.двовимірніМасивиToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.двовимірніМасивиToolStripMenuItem.Text = "Двовимірні масиви";
             this.двовимірніМасивиToolStripMenuItem.Click += new System.EventHandler(this.двовимірніМасивиToolStripMenuItem_Click);
+            // 
+            // unitTestToolStripMenuItem
+            // 
+            this.unitTestToolStripMenuItem.Name = "unitTestToolStripMenuItem";
+            this.unitTestToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.unitTestToolStripMenuItem.Text = "Unit Test";
+            this.unitTestToolStripMenuItem.Click += new System.EventHandler(this.unitTestToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -279,6 +288,7 @@
         private System.Windows.Forms.ToolStripMenuItem масивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem одномірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unitTestToolStripMenuItem;
     }
 }
 

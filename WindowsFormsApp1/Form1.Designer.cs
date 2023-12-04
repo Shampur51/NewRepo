@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -51,6 +51,9 @@
             this.одномірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.двовимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.роботаЗФайламиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.стандартніІнтерфейсиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подіїToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -182,14 +185,14 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
             this.chart1.Location = new System.Drawing.Point(321, 142);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(323, 281);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
@@ -199,7 +202,10 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.масивиToolStripMenuItem,
-            this.unitTestToolStripMenuItem});
+            this.unitTestToolStripMenuItem,
+            this.роботаЗФайламиToolStripMenuItem,
+            this.стандартніІнтерфейсиToolStripMenuItem,
+            this.подіїToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -214,6 +220,7 @@
             this.масивиToolStripMenuItem.Name = "масивиToolStripMenuItem";
             this.масивиToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.масивиToolStripMenuItem.Text = "Масиви ";
+            this.масивиToolStripMenuItem.Click += new System.EventHandler(this.масивиToolStripMenuItem_Click);
             // 
             // одномірніМасивиToolStripMenuItem
             // 
@@ -235,6 +242,27 @@
             this.unitTestToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.unitTestToolStripMenuItem.Text = "Unit Test";
             this.unitTestToolStripMenuItem.Click += new System.EventHandler(this.unitTestToolStripMenuItem_Click);
+            // 
+            // роботаЗФайламиToolStripMenuItem
+            // 
+            this.роботаЗФайламиToolStripMenuItem.Name = "роботаЗФайламиToolStripMenuItem";
+            this.роботаЗФайламиToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
+            this.роботаЗФайламиToolStripMenuItem.Text = "Робота з файлами";
+            this.роботаЗФайламиToolStripMenuItem.Click += new System.EventHandler(this.роботаЗФайламиToolStripMenuItem_Click);
+            // 
+            // стандартніІнтерфейсиToolStripMenuItem
+            // 
+            this.стандартніІнтерфейсиToolStripMenuItem.Name = "стандартніІнтерфейсиToolStripMenuItem";
+            this.стандартніІнтерфейсиToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.стандартніІнтерфейсиToolStripMenuItem.Text = "Стандартні інтерфейси";
+            this.стандартніІнтерфейсиToolStripMenuItem.Click += new System.EventHandler(this.стандартніІнтерфейсиToolStripMenuItem_Click);
+            // 
+            // подіїToolStripMenuItem
+            // 
+            this.подіїToolStripMenuItem.Name = "подіїToolStripMenuItem";
+            this.подіїToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.подіїToolStripMenuItem.Text = "Події";
+            this.подіїToolStripMenuItem.Click += new System.EventHandler(this.подіїToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -289,6 +317,9 @@
         private System.Windows.Forms.ToolStripMenuItem одномірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unitTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem роботаЗФайламиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem стандартніІнтерфейсиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem подіїToolStripMenuItem;
     }
 }
 

@@ -97,5 +97,31 @@ namespace WindowsFormsApp1
             f.Show();
             this.Hide();
         }
+
+        private void роботаЗФайламиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File f = new File();
+            f.Show();
+            this.Hide();
+        }
+
+        private void стандартніІнтерфейсиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Proverka f = new Proverka();
+            f.Show();
+            this.Hide();
+        }
+
+        private void подіїToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Podiyi f = new Podiyi();
+            f.Show();
+            this.Hide();
+        }
+
+        private void масивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
